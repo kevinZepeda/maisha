@@ -1,0 +1,396 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+
+<title>Maisha - Cita</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/slick.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+        <nav id="mainNav" class="navbar navbar-default navbar-full">
+                <div class="container container-nav">
+                    <div class="navbar-header">
+                        <button aria-expanded="false" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs" style="margin-top:70px;margin-right:40px;"> 
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand page-scroll" href="index.html">
+                            <img src="images/logo_maisha.png" alt="Logotipo Maisha" style="width:235px;">
+                        </a>
+                    </div>
+                    <div style="height: 1px;" role="main" aria-expanded="false" class="navbar-collapse collapse" id="bs">
+                         <ul class="nav navbar-nav navbar-right">
+                            
+                            <li class="dropdown">
+                                <a href="#">¿Quiénes somos? <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                  <li><a href="nosotros.html">Sobre nosotros</a></li>
+                                  <li><a href="lic.html">Lic. Maribel Salas.</a></li>
+                                  <li><a href="historia.html">Historia</a></li>
+                                  
+                                </ul>
+                            </li>
+                            <li><a href="servicios.html">Servicios</a></li>
+                            <li><a href="cita.html">Programa una cita</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+<div id="page-head" class="container-fluid inner-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="page-title"><div class="b-title"><div class="big-title">Programa una <span>cita</span><br></div></div>Elije la fecha y horario en el que te gustaría la consulta.<br>Te confirmaremos vía correo electrónico si el horario esta disponible.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="form-section" class="container-fluid ">
+        <div class="container">
+            <div class="col-md-12 form-holder">
+                <div class="signin-signup-form">
+                    <div class="form-title">Datos del Paciente</div>
+                    <form id="signinform">
+                        <div class="row">
+                            <div class="col-md-6 form-text">
+                                <input type="text" name="firstname" placeholder="Nombre" required>
+                            </div>
+                            <div class="col-md-6 form-text">
+                                <input type="text" name="lastname" placeholder="Apellidos" required>
+                            </div>
+                        </div>
+                        <div class="form-text">
+                            <input type="text" name="username" placeholder="E-mail" required>
+                        </div><br><br><br>
+                        <div class="form-title">Datos de la consulta</div>
+                        <select id="demo" name="consulta">
+                            <option value="#">Seleciona un servicio.</option>
+                            <option value="Html5">Html5</option>
+                            <option value="CSS3">CSS3</option>
+                            <option value="Javascript">Javascript</option>
+                            <option value="Ruby">Ruby</option>
+                            <option value="Python">Python</option>
+                            <option value="C++">C++</option>
+                        </select>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                    <div class="nativeDatePicker">
+                                            <label for="bday">Fecha</label><br>
+                                            <input type="date" id="bday" name="bday">
+                                            <span class="validity"></span>
+                                    </div>
+                            </div>
+                            <div class="col-xs-6">
+                                    <div class="nativeTimePicker">
+                                            <label for="appt-time">Horario </label><br>
+                                              <input id="appt-time" type="time" name="appt-time"
+                                                     min="12:00" max="18:00" required>
+                                              <span class="validity"></span>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="form-button">
+                            <button id="submit" type="submit" class="btn btn-default">Enviar <i class="fa fa-arrow-right"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<div id="footer" class="container-fluid">
+        <div class="container">
+            <div class="row">
+            <div class="col-xs-6 col-sm-3 col-md-3">
+                    <div class="footer-menu-holder">
+                       <img src="images/logo_maisha_negative.png" style="width:100%;" alt="Maisha logo negativo">
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-3">
+                    <div class="footer-menu-holder">
+                        <h4>Síguenos en</h4>
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <img src="images/icons_footer_facebook.svg" style="width:60%;"alt="facebook de maisha">
+                            </div>
+                            <div class="col-xs-4">
+                                <img src="images/icons_footer_linkedin.svg" style="width:60%;"alt="linkeding de maisha">
+                            </div>
+                            <div class="col-xs-4">
+                                <img src="images/icons_footer_twitter.svg" style="width:60%;"alt="twitter de maisha">
+                            </div>
+                        </div>
+                        <h4><br>Contáctanos</h4>
+                        <ul class="footer-menu">
+                            <li><a> +52 (55) 6584 6584</a></li>
+                            <li><a> +52 (55) 6584 6584</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-2 col-md-2">
+                    <div class="footer-menu-holder">
+                        <h4>¿Quiénes somos?</h4>
+                        <ul class="footer-menu">
+                            <li><a href="nosotros.html>Sobre nosotros</a></li>
+                            <li><a href="lic.html">Lic Maribel Salas</a></li>
+                            <li><a href="historia.html">Historia</a></li>
+                            <li><a href="#">Especialidades</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-2 col-md-2">
+                    <div class="footer-menu-holder">
+                        <h4>Nuestros Servicios</h4>
+                        <ul class="footer-menu">
+                            <li><a href="">Nutición</a></li>
+                            <li><a href="">Salud Preventiva</a></li>
+                            <li><a href="">Descanso físico</a></li>
+                            <li><a href="">Estética</a></li>
+                            <li><a href="">Descanso emocional</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-2 col-md-2">
+                    <div class="address-holder">
+                        <h4>Información</h4>
+                        <ul class="footer-menu">
+                            <li><a href="">Contacto</a></li>
+                            <li><a href="">Nustros Horarios</a></li>
+                            <li><a href="">Ubicación</a></li>
+                            <li><a href="cita.html">Programa una consulta</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="cc">Copyright © 2018 Maisha. All rights reserved</div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script type="text/Javascript">
+//Select tipe
+$(document).ready(function (){
+$('select').wrap('<div class="select_wrapper"></div>')
+$('select').parent().prepend('<span>'+ $(this).find(':selected').text() +'</span>');
+
+$('select').css('display', 'none');					
+$('select').parent().append('<ul class="select_inner"></ul>');
+$('select').children().each(function(){
+  var opttext = $(this).text();
+  var optval = $(this).val();
+  $('select').parent().children('.select_inner').append('<li id="' + optval + '">' + opttext + '</li>');
+});
+
+
+
+$('select').parent().find('li').on('click', function (){
+  var cur = $(this).attr('id');
+  $('select').parent().children('span').text($(this).text());
+  $('select').children().removeAttr('selected');
+  $('select').children('[value="'+cur+'"]').attr('selected','selected');					
+  //console.log($('select').children('[value="'+cur+'"]').text());
+       $('select').parent().removeClass('openSelect');
+
+   $('select').parent().find('ul').hide();
+});
+$('select').parent().find('span').on('click', function (){
+   $('select').parent().find('ul').slideToggle(200);
+  
+     $('select').parent().toggleClass('openSelect');
+
+  
+});
+});
+
+
+// define variables
+var nativePicker = document.querySelector('.nativeDatePicker');
+var fallbackPicker = document.querySelector('.fallbackDatePicker');
+var fallbackLabel = document.querySelector('.fallbackLabel');
+
+var yearSelect = document.querySelector('#year');
+var monthSelect = document.querySelector('#month');
+var daySelect = document.querySelector('#day');
+
+// hide fallback initially
+fallbackPicker.style.display = 'none';
+fallbackLabel.style.display = 'none';
+
+// test whether a new date input falls back to a text input or not
+var test = document.createElement('input');
+test.type = 'date';
+
+// if it does, run the code inside the if() {} block
+if(test.type === 'text') {
+  // hide the native picker and show the fallback
+  nativePicker.style.display = 'none';
+  fallbackPicker.style.display = 'block';
+  fallbackLabel.style.display = 'block';
+
+  // populate the days and years dynamically
+  // (the months are always the same, therefore hardcoded)
+  populateDays(monthSelect.value);
+  populateYears();
+}
+
+function populateDays(month) {
+  // delete the current set of <option> elements out of the
+  // day <select>, ready for the next set to be injected
+  while(daySelect.firstChild){
+    daySelect.removeChild(daySelect.firstChild);
+  }
+
+  // Create variable to hold new number of days to inject
+  var dayNum;
+
+  // 31 or 30 days?
+  if(month === 'January' || month === 'March' || month === 'May' || month === 'July' || month === 'August' || month === 'October' || month === 'December') {
+    dayNum = 31;
+  } else if(month === 'April' || month === 'June' || month === 'September' || month === 'November') {
+    dayNum = 30;
+  } else {
+  // If month is February, calculate whether it is a leap year or not
+    var year = yearSelect.value;
+    (year - 2016) % 4 === 0 ? dayNum = 29 : dayNum = 28;
+  }
+
+  // inject the right number of new <option> elements into the day <select>
+  for(i = 1; i <= dayNum; i++) {
+    var option = document.createElement('option');
+    option.textContent = i;
+    daySelect.appendChild(option);
+  }
+
+  // if previous day has already been set, set daySelect's value
+  // to that day, to avoid the day jumping back to 1 when you
+  // change the year
+  if(previousDay) {
+    daySelect.value = previousDay;
+
+    // If the previous day was set to a high number, say 31, and then
+    // you chose a month with less total days in it (e.g. February),
+    // this part of the code ensures that the highest day available
+    // is selected, rather than showing a blank daySelect
+    if(daySelect.value === "") {
+      daySelect.value = previousDay - 1;
+    }
+
+    if(daySelect.value === "") {
+      daySelect.value = previousDay - 2;
+    }
+
+    if(daySelect.value === "") {
+      daySelect.value = previousDay - 3;
+    }
+  }
+}
+
+function populateYears() {
+  // get this year as a number
+  var date = new Date();
+  var year = date.getFullYear();
+
+  // Make this year, and the 100 years before it available in the year <select>
+  for(var i = 0; i <= 100; i++) {
+    var option = document.createElement('option');
+    option.textContent = year-i;
+    yearSelect.appendChild(option);
+  }
+}
+
+// when the month or year <select> values are changed, rerun populateDays()
+// in case the change affected the number of available days
+yearSelect.onchange = function() {
+  populateDays(monthSelect.value);
+}
+
+monthSelect.onchange = function() {
+  populateDays(monthSelect.value);
+}
+
+//preserve day selection
+var previousDay;
+
+// update what day has been set to previously
+// see end of populateDays() for usage
+daySelect.onchange = function() {
+  previousDay = daySelect.value;
+}
+
+// define variables
+var nativePicker = document.querySelector('.nativeTimePicker');
+var fallbackPicker = document.querySelector('.fallbackTimePicker');
+var fallbackLabel = document.querySelector('.fallbackLabel');
+
+var hourSelect = document.querySelector('#hour');
+var minuteSelect = document.querySelector('#minute');
+
+// hide fallback initially
+fallbackPicker.style.display = 'none';
+fallbackLabel.style.display = 'none';
+
+// test whether a new date input falls back to a text input or not
+var test = document.createElement('input');
+test.type = 'time';
+// if it does, run the code inside the if() {} block
+if(test.type === 'text') {
+  // hide the native picker and show the fallback
+  nativePicker.style.display = 'none';
+  fallbackPicker.style.display = 'block';
+  fallbackLabel.style.display = 'block';
+
+  // populate the hours and minutes dynamically
+  populateHours();
+  populateMinutes();
+}
+
+function populateHours() {
+  // populate the hours <select> with the 6 open hours of the day
+  for(var i = 12; i <= 18; i++) {
+    var option = document.createElement('option');
+    option.textContent = i;
+    hourSelect.appendChild(option);
+  }
+}
+
+function populateMinutes() {
+  // populate the minutes <select> with the 60 hours of each minute
+  for(var i = 0; i <= 59; i++) {
+    var option = document.createElement('option');
+    option.textContent = (i < 10) ? ("0" + i) : i;
+    minuteSelect.appendChild(option);
+  }
+}
+
+// make it so that if the hour is 18, the minutes value is set to 00
+// — you can't select times past 18:00
+ function setMinutesToZero() {
+   if(hourSelect.value === '18') {
+     minuteSelect.value = '00';
+   }
+ }
+
+ hourSelect.onchange = setMinutesToZero;
+ minuteSelect.onchange = setMinutesToZero;
+</script>
+<script src="js/main.js"></script>
+</body>
+</html>
