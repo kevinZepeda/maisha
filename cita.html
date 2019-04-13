@@ -60,40 +60,42 @@
             <div class="col-md-12 form-holder">
                 <div class="signin-signup-form">
                     <div class="form-title">Datos del Paciente</div>
-                    <form id="signinform">
+                    <form accept-charset="UTF-8" action="https://usebasin.com/f/d2b746c1d430" method="POST">
                         <div class="row">
                             <div class="col-md-6 form-text">
-                                <input type="text" name="firstname" placeholder="Nombre" required>
+                                <input type="text" name="Nombre del paciente" placeholder="Nombre" required>
                             </div>
                             <div class="col-md-6 form-text">
-                                <input type="text" name="lastname" placeholder="Apellidos" required>
+                                <input type="text" name="Apellidos" placeholder="Apellidos" required>
                             </div>
                         </div>
                         <div class="form-text">
-                            <input type="text" name="username" placeholder="E-mail" required>
+                            <input type="text" name="Correo electronico" placeholder="E-mail" required>
                         </div><br><br><br>
                         <div class="form-title">Datos de la consulta</div>
-                        <select id="demo" name="consulta">
+                        <select id="demo" name="Consulta">
                             <option value="#">Seleciona un servicio.</option>
-                            <option value="Html5">Html5</option>
-                            <option value="CSS3">CSS3</option>
-                            <option value="Javascript">Javascript</option>
-                            <option value="Ruby">Ruby</option>
-                            <option value="Python">Python</option>
-                            <option value="C++">C++</option>
+                            <option value="Asesoría inicial">Asesoría Inicial</option>
+                            <option value="Asesoría complementaria">Asesoría Complementaria</option>
+                            <option value="Asesoría definitiva">Asesoría Definitiva</option>
+                            <option value="Asesoría familiar">Asesoría Familiar</option>
+                            <option value="Mi momento">Mi Momento</option>
+                            <option value="Mejorando mi vida">Mejorando mi vida</option>
+                            <option value="Mi propio bienestar">Mi propio bienestar</option>
+                            <option value="Soy fit">¡Soy fit!</option>
                         </select>
                         <div class="row">
                             <div class="col-xs-6">
                                     <div class="nativeDatePicker">
                                             <label for="bday">Fecha</label><br>
-                                            <input type="date" id="bday" name="bday">
+                                            <input type="date" id="bday" name="Fecha">
                                             <span class="validity"></span>
                                     </div>
                             </div>
                             <div class="col-xs-6">
                                     <div class="nativeTimePicker">
                                             <label for="appt-time">Horario </label><br>
-                                              <input id="appt-time" type="time" name="appt-time"
+                                              <input id="appt-time" type="time" name="Hora"
                                                      min="12:00" max="18:00" required>
                                               <span class="validity"></span>
                                     </div>

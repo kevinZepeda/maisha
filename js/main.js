@@ -1,14 +1,4 @@
-/*------------------------------------------------------------------
- * Theme Name: Hostino Responsive Template
- * Theme URI: http://www.brandio.io/envato/hostino
- * Author: Brandio
- * Author URI: http://www.brandio.io/
- * Description: A Bootstrap Responsive HTML5 Template
- * Version: 1.0
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * Bootstrap v3.3.7 (http://getbootstrap.com)
- * Copyright 2017 Brandio.
- -------------------------------------------------------------------*/
+
 
 "use strict";
 
@@ -16,7 +6,7 @@
 var mainSlider = $("#main-slider","#top-content");
 mainSlider.slick({
     dots: true,
-    customPaging: function(slider, i) { 
+    customPaging: function(slider, i) {
         return '<button class="tab">' + $(slider.$slides[i]).attr('title') + '</button>';
     },
     speed: 1000,
@@ -33,7 +23,7 @@ mainSlider.slick({
 mainSlider.on('afterChange', function(event, slick, currentSlide, nextSlide){
     $('.slide > div:nth-child(2)','#main-slider').removeClass("animated");
     $('.slide > div:nth-child(3)','#main-slider').removeClass("animated animation-delay1");
- 
+
     $('.slick-active > div:nth-child(2)','#main-slider').addClass("animated");
     $('.slick-active > div:nth-child(3)','#main-slider').addClass("animated animation-delay1");
 });
@@ -64,7 +54,7 @@ $(".photo-slider","#about").slick({
 // Add Slider functionality to the about page text in #goals section.
 $("#text-slider","#goals").slick({
     dots: true,
-    customPaging: function(slider, i) { 
+    customPaging: function(slider, i) {
         return '<button class="tab">' + $(slider.$slides[i]).attr('title') + '</button>';
     },
     arrows: false,
@@ -97,7 +87,7 @@ $(window).on("load", function() {
     });
     // Apps Section hover function
     var appHolder = $(".app-icon-holder", "#apps");
-    
+
     appHolder.on("mouseover",function(){
         appHolder.removeClass("opened");
         $(this).addClass("opened");

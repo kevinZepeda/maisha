@@ -223,6 +223,31 @@ main {
 .box__content strong {
 	white-space: nowrap;
 }
+.box__service {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+}
+.box__price {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+.box__btn {
+    text-align: center;
+    background: #000;
+    padding: 20px;
+		color: #fff;
+		font-weight: bold;
+		margin-top: 25px;
+    border-radius: 39px;
+}
+a.grid__item:hover,
+a.grid__item:focus,
+a.grid__item:active
+{
+    text-decoration: none;
+}
 
 .overlay {
 	pointer-events: none;
@@ -240,7 +265,7 @@ main {
 }
 
 .overlay__reveal {
-	width: 100%;
+	width: 110%;
 	height: 100%;
 	top: 0;
 	left: 0;
@@ -296,12 +321,17 @@ main {
 }
 
 .overlay__content {
-	font-size: 1rem;
-	line-height: 1.5;
-	max-width: 25rem;
-	margin: 1rem 0 0 10vw;
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 40rem;
+    color: #fff;
+    font-weight: 700;
+    margin: 0 0 0 50px;
 }
-
+.overlay__content span {
+	font-size: 35px;
+	font-weight: bold;
+}
 @media screen and (min-width: 55em) {
 	.grid {
 		display: grid;
@@ -377,7 +407,7 @@ main {
 		flex-direction: row;
 	}
 	.overlay__content {
-		font-size: 2.25rem;
+		font-size:16px;
 		margin-top: 0;
 	}
 	.overlay__item .box__title--bottom {
