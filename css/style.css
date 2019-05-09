@@ -857,7 +857,13 @@ body.fullpage{
 .domain-search-holder input[type="submit"]:focus{
     background-color: #ff5d83;
 }
-
+.overlay__cita {
+    position: absolute;
+    bottom: 75px;
+    right: 30%;
+    opacity: 0;
+    margin: 20px;
+}
 .domain-search-holder ::-webkit-input-placeholder {color: #d6dae4;}
 .domain-search-holder :-moz-placeholder {color: #d6dae4;}
 .domain-search-holder ::-moz-placeholder {color: #d6dae4;}
@@ -3244,7 +3250,8 @@ a.white-less-shadow-button:focus{
         margin-bottom: 22px;
     }
     #testimonials #testimonials-slider .details-holder p {
-        font-size: 16px;
+        font-size: 14px;
+        text-align: left;
     }
     #testimonials #testimonials-slider .slick-prev:after {
         font-size: 25px;
@@ -3332,6 +3339,40 @@ a.white-less-shadow-button:focus{
     #mini-header.signup .menu-holder ul.main-links li a.sign-button:hover,
     #mini-header.signup .menu-holder ul.main-links li a.sign-button:focus{
         background-color: #0080d9;
+    }
+    #info-whitebg img {
+        display: none;
+    }
+    #info-whitebg {
+    background-image: none;
+    }
+    .tittle_withe{
+      margin-left: 0;
+      margin-top: 100px;
+    }
+    #africa{
+      display: none;
+    }
+    .article-text{
+      text-align: left;
+      font-weight: 600;
+    }
+    .article-qoute{
+      font-size: 23px;
+      text-align: left;
+    }
+    .overlay__item .box{
+      position: absolute;
+      top: -200px;
+      width: 500px;
+    }
+    .overlay__cita{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      opacity: 0;
+      width: calc(100% - 40px);
+      margin: 20px;
     }
 }
 @media (max-width: 480px) {

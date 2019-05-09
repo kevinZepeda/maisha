@@ -302,7 +302,7 @@ a.grid__item:active
 
 .box__img--original {
 	max-height: calc(100vh - 10rem);
-	filter: none;
+	filter: brightness(0.7);
 }
 
 .overlay__close {
@@ -321,12 +321,11 @@ a.grid__item:active
 }
 
 .overlay__content {
-    font-size: 1rem;
-    line-height: 1.5;
-    max-width: 40rem;
-    color: #fff;
-    font-weight: 700;
-    margin: 0 0 0 50px;
+	font-size: 18px;
+	max-width: 40rem;
+	color: #fff;
+	font-weight: 700;
+	margin: 30px 10px 0 10px;
 }
 .overlay__content span {
 	font-size: 35px;

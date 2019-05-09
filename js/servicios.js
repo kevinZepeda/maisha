@@ -172,27 +172,29 @@
             this.DOM.reveal = this.DOM.el.querySelector('.overlay__reveal');
             this.DOM.items = this.DOM.el.querySelectorAll('.overlay__item');
             this.DOM.close = this.DOM.el.querySelector('.overlay__close');
+            this.DOM.cita = this.DOM.el.querySelector('.overlay__cita');
         }
         show(contentItem) {
             this.contentItem = contentItem;
             this.DOM.el.classList.add('overlay--open');
             // show revealer
-            TweenMax.to(this.DOM.reveal, .5, {
+            TweenMax.to(this.DOM.reveal, .3, {
                 ease: 'Power1.easeInOut',
-                x: '0%',
+                x: '-20%',
                 onComplete: () => {
                     // hide scroll
                     document.body.classList.add('preview-open');
                     // show preview
                     this.revealItem(contentItem);
                     // hide revealer
-                    TweenMax.to(this.DOM.reveal, .5, {
+                    TweenMax.to(this.DOM.reveal, .3, {
                         delay: 0.2,
                         ease: 'Power3.easeOut',
                         x: '-100%'
                     });
 
                     this.DOM.close.style.opacity = 1;
+                    this.DOM.cita.style.opacity = 1;
                 }
             });
         }
@@ -235,6 +237,7 @@
                 x: '0%',
                 onComplete: () => {
                     this.DOM.close.style.opacity = 0;
+                    this.DOM.cita.style.opacity = 0;
                     // show scroll
                     document.body.classList.remove('preview-open');
                     // hide preview
