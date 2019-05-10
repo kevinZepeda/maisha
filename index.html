@@ -10,7 +10,14 @@
 <link rel="stylesheet" type="text/css" href="css/slick.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-
+    <style>
+        #logo: width: 235px;
+        @media (max-width: 768px) {
+            #logo {
+                width:135px;
+            }
+        }
+    </style>
 <body>
 <nav id="mainNav" class="navbar navbar-default navbar-full">
     <div class="container container-nav">
@@ -21,7 +28,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand page-scroll" href="index.html">
-                <img src="images/logo_maisha.png" alt="Logotipo Maisha" style="width:235px;">
+                <img src="images/logo_maisha.png" alt="Logotipo Maisha" id="logo">
             </a>
         </div>
         <div style="height: 1px;" role="main" aria-expanded="false" class="navbar-collapse collapse" id="bs">
