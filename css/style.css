@@ -3377,7 +3377,7 @@ a.white-less-shadow-button:focus{
 }
 @media (max-width: 480px) {
     #main-slider .slide{
-        padding-top: 80px;
+        padding-top: 50px;
         margin-bottom: 0;
         padding-bottom: 160px;
     }
