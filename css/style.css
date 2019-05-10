@@ -3379,7 +3379,7 @@ a.white-less-shadow-button:focus{
     #main-slider .slide{
         padding-top: 50px;
         margin-bottom: 0;
-        padding-bottom: 160px;
+        padding-bottom: 0px;
     }
     #main-slider .slide .text-holder {
         font-size: 20px;
