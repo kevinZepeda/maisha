@@ -5,45 +5,56 @@
 <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
 
 <title>Maisha - Cita</title>
+<meta name="description" content="Haz una cita con nosotros, dejanos tus datos y nos ponemos en contacto." />
+<meta name="keywords" content="terapia, nutrición, nutriologia, servicio, consulta, nutriologa, familiar" />
+<meta name="author" content="gh:kevinzepeda" />
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="css/slick.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-
+<style>
+  #logo{ 
+      width: 235px;
+  }
+  @media (max-width: 768px) {
+      #logo {
+          width:135px;
+      }
+  }
+</style>
 <body>
+  <nav id="mainNav" class="navbar navbar-default navbar-full">
+    <div class="container container-nav">
+        <div class="navbar-header">
+            <button aria-expanded="false" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs" style="margin-top:40px;margin-right:40px;">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll" href="index.html">
+                <img src="images/logo_maisha.png" alt="Logotipo Maisha" id="logo">
+            </a>
+        </div>
+        <div style="height: 1px;" role="main" aria-expanded="false" class="navbar-collapse collapse" id="bs">
+             <ul class="nav navbar-nav navbar-right">
 
-        <nav id="mainNav" class="navbar navbar-default navbar-full">
-                <div class="container container-nav">
-                    <div class="navbar-header">
-                        <button aria-expanded="false" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs" style="margin-top:70px;margin-right:40px;">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand page-scroll" href="index.html">
-                            <img src="images/logo_maisha.png" alt="Logotipo Maisha" style="width:235px;">
-                        </a>
-                    </div>
-                    <div style="height: 1px;" role="main" aria-expanded="false" class="navbar-collapse collapse" id="bs">
-                         <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#">¿Quiénes somos? <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="nosotros.html">Sobre nosotros</a></li>
+                      <li><a href="lic.html">Lic. Maribel Salas.</a></li>
+                      <li><a href="#">Historia</a></li>
 
-                            <li class="dropdown">
-                                <a href="#">¿Quiénes somos? <span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                  <li><a href="nosotros.html">Sobre nosotros</a></li>
-                                  <li><a href="lic.html">Lic. Maribel Salas.</a></li>
-                                  <li><a href="#">Historia</a></li>
-
-                                </ul>
-                            </li>
-                            <li><a href="servicios.html">Servicios</a></li>
-                            <li><a href="cita.html">Programa una cita</a></li>
-                            <li><a href="contacto.html">Contacto</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+                    </ul>
+                </li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="cita.html">Programa una cita</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>  
 
 <div id="page-head" class="container-fluid inner-page">
     <div class="container">
