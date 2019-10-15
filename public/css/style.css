@@ -269,7 +269,15 @@ body.fullpage{
     font-size: 19px;
     margin-bottom: 50px;
 }
-
+.signin-signup-form span {
+    font-weight: bold;
+    float: right;
+}
+.signin-signup-form hr {
+    border: 1px dashed;
+    border-color: #afafaf;
+    margin: -20px 150px 15px 100px;
+}
 .signin-signup-form{
     width: 100%;
     display: inline-block;
