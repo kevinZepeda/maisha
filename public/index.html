@@ -76,25 +76,49 @@
                         <div class="b-title">Cuidar nuestro cuerpo no es un lujo,<br><div class="big-title">es una <span>necesidad</span></div></div>
                         <div class="b-parrafo">La nutrición es algo más que sólo saber comer.<br>Es valorar nuestro cuerpo y mente, y saber cuidarlos.</div>
                         <div class="button-holder"><a href="cita.html" class="blue-button">Solicita tu plan ideal<span class="row-btn"><i class="fa fa-arrow-right"></i></span></a></div>
+                        <div class="button-holder"><a id="vidio" class="blue-button" style="border:3px solid #fa5b80;background:#fff;color:#fa5b80;"data-toggle="modal" data-target="#video">Ver Video<span class="row-btn"><i class="fa fa-play" aria-hidden="true"></i></span></a></div>
                     </div>
                     <div class="slide domainsearch-slide" title="Welcome !">
                         <div class="image-holder"><img src="images/biography_2.png" alt="Servicio fitnes" /></div>
                         <div class="b-title">“En tan sólo 21 días lograrás<br><div class="big-title"> tus <span>objetivos"</span></div></div>
-                        <div class="button-holder"><a href="cita.html" class="blue-button">Solicita tu plan ideal<span class="row-btn"><i class="fa fa-arrow-right"></i></span></a></div>
+                        <div class="button-holder"><a id="vidio" class="blue-button">Solicita tu plan ideal<span class="row-btn"><i class="fa fa-arrow-right"></i></span></a></div>
+                        <div class="button-holder"><a id="vidio" class="blue-button" style="border:3px solid #fa5b80;background:#fff;color:#fa5b80;"data-toggle="modal" data-target="#video">Ver Video<span class="row-btn"><i class="fa fa-play" aria-hidden="true"></i></span></a></div>
                     </div>
                     <div class="slide domainsearch-slide" title="Welcome !">
                         <div class="image-holder"><img src="images/digital.jpg" alt="Servicio digital" /></div>
                         <div class="b-title">Eres tú quien crea tus pensamientos,<br><div class="big-title">sentimientos y<span>  acciones.</span></div></div>
-
                         <div class="b-parrafo">Bienestar al alcance de un click. Maisha se enorgullece<br> de tener un coaching virtual para evitarles a <br>nuestros pacientes consultas costosas y traslados innecesarios.</div>
-                        <div class="button-holder"><a href="cita.html" class="blue-button">Saber más<span class="row-btn"><i class="fa fa-arrow-right"></i></span></a></div>
+                        <div class="button-holder"><a id="vidio" class="blue-button">Saber más<span class="row-btn"><i class="fa fa-arrow-right"></i></span></a></div>
+                        <div class="button-holder"><a id="vidio" class="blue-button" style="border:3px solid #fa5b80;background:#fff;color:#fa5b80;"data-toggle="modal" data-target="#video">Ver Video<span class="row-btn"><i class="fa fa-play" aria-hidden="true"></i></span></a></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<!-- Modal -->
+<div id="video" class="modal fade" role="dialog">
+  <div class="modal-dialog">
 
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <div class="row-title" style="font-weight:700;font-size:20px;">Canal de <span style="color:#f85a7f;">YouTube</span></div>
+      </div>
+      <div class="modal-body">
+        <video src="videos/1.mp4" controls style="width:100%;">
+          Tu navegador no implementa el elemento <code>video</code>.
+        </video>
+      </div>
+      <div class="modal-footer">
+        <div class="button-holder"><a class="blue-button" style="border:3px solid #fa5b80;background:#fff;color:#fa5b80;"data-dismiss="modal">Cerrar<span class="row-btn"><i class="fa fa-close" aria-hidden="true"></i></span></a></div>
+        <div class="button-holder"><a href="https://youtube.com" class="blue-button">Ver más videos<span class="row-btn"><i class="fa fa-play"></i></span></a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
 <div id="testimonials" class="container-fluid">
     <div class="container">
         <div class="row">
@@ -238,7 +262,14 @@
 <script src="js/paper-full.min.js"></script>
 <script type="text/paperscript" src="js/metaball.js" data-paper-canvas="infobg"></script>
 <script src="js/main.js"></script>
+<script type="text/javascript">
 
+$("#vidio").click(function(){
+  var v = document.getElementsByTagName("video")[0];
+  v.play();
+});
+
+</script>
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="/__/firebase/6.0.2/firebase-app.js"></script>
 

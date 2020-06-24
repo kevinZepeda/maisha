@@ -905,7 +905,7 @@ body.fullpage{
     line-height: 38px;
     margin-bottom: 25px;
 }
-#main-slider .slide .button-holder a.blue-button{
+.button-holder a.blue-button{
     display: inline-block;
     text-decoration: none;
     color: #ffffff;
